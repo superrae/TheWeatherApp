@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Square+Peg&family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-position: top center;
+    background-image: linear-gradient(to bottom, rgba(3, 10, 39, 0.5), rgba(1, 18, 5, 0.5)), url('bgg.jpg');
+    background-size: cover;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.search-box{
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+    display: flex;
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+.search-box input{
+    background: transparent; 
+    border: none;
+    flex:auto;
+    font-size: 15px;
+    padding: 15px;
+    color: white;
+}
+.search-box button{
+    border: none; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    background: color;
+}
+.search-box button img{
+    width: 25px;
+}
+::placeholder{
+    color: white;
+}
+.city{
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Square Peg', cursive;
+}
+.datetime{
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Square Peg', cursive;
+}
+.temp{
+    font-size: 120px;
+    font-weight: bold;
+    color:white;
+    text-shadow: 20px;
+    font-family: 'Square Peg', cursive;
+}
+.celsius{
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+}
