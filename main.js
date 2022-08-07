@@ -36,9 +36,9 @@ function Display(weather){
         document.body.style.backgroundImage = "url('7-12.jpg')"; 
     } else if(Math.round(weather.main.temp) >= 13 && Math.round(weather.main.temp <= 23)) {
         document.body.style.backgroundImage = "url('13-23.jpg')"; 
-    } else if(Math.round(weather.main.temp) >= 24 && Math.round(weather.main.temp <= 33)) {
+    } else if(Math.round(weather.main.temp) >= 24 && Math.round(weather.main.temp <= 36)) {
         document.body.style.backgroundImage = "url('24-33.jpg')"; 
-    } else if(Math.round(weather.main.temp) >= 34){
+    } else if(Math.round(weather.main.temp) >= 37){
         document.body.style.backgroundImage = "url('34 or greater.jpg')"; 
     }
 }
