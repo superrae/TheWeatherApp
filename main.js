@@ -1,6 +1,6 @@
 const API = {
     key: "6b499c40bbfe47af22df74cf21df2d77",
-    base: "https://api.openweathermap.org/data/2.5/"
+    url: "https://api.openweathermap.org/data/2.5/"
 }
 const search =  document.querySelector('.searchB');
 search.addEventListener('keypress', input);
@@ -12,7 +12,7 @@ function input(event){
 }
 
 function calc(query){
-    fetch(`${API.base}weather?q=${query}&units=metric&appid=${API.key}`)
+    fetch(`${API.url}weather?q=${query}&units=metric&appid=${API.key}`)
     .then(weather => {
       return weather.json();
     }).then(Display);
@@ -36,9 +36,9 @@ function Display(weather){
         document.body.style.backgroundImage = "url('7-12.jpg')"; 
     } else if(Math.round(weather.main.temp) >= 13 && Math.round(weather.main.temp <= 23)) {
         document.body.style.backgroundImage = "url('13-23.jpg')"; 
-    } else if(Math.round(weather.main.temp) >= 24 && Math.round(weather.main.temp <= 36)) {
+    } else if(Math.round(weather.main.temp) >= 24 && Math.round(weather.main.temp <= 33)) {
         document.body.style.backgroundImage = "url('24-33.jpg')"; 
-    } else if(Math.round(weather.main.temp) >= 37){
+    } else if(Math.round(weather.main.temp) >= 34){
         document.body.style.backgroundImage = "url('34 or greater.jpg')"; 
     }
 }
